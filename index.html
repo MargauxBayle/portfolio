@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=, initial-scale=1.0" />
+    <title>Portfolio Bootstrap test</title>
+    <link rel="stylesheet" href="css/style.min.css" />
+  </head>
+  <body class="bg-primary text-light">
+    <header>
+      <div class="container-fluid">
+        <nav
+          id="navbar-example2"
+          class="navbar bg-body-primary px-3 mb-3 sticky-top"
+        >
+          <a class="navbar-brand text-light" href="#">Margaux Bayle</a>
+          <ul class="nav nav-pills">
+            <li class="nav-item">
+              <a class="nav-link text-light" href="#scrollspyHeading1"
+                >Mes projets</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-light" href="#scrollspyHeading2"
+                >Expériences</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-light" href="#scrollspyHeading3"
+                >A propos</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-light" href="#scrollspyHeading4"
+                >Contact</a
+              >
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <div
+      data-bs-spy="scroll"
+      data-bs-target="#navbar-example2"
+      data-bs-root-margin="0px 0px -40%"
+      data-bs-smooth-scroll="true"
+      class="scrollspy-example bg-body-primary p-3 rounded-2"
+      tabindex="0"
+    >
+      <h1 id="scrollspyHeading1">Développeuse Web Full Stack</h1>
+      <h4>Des sites web à votre image, sécurisés et éco-responsables.</h4>
+      <p>
+        Salut, moi c'est Margaux ! Je vous propose des sites web personnalisés,
+        qui mettent en avant ce qui compte pour vous. Attentive au moindre
+        détail et rigoureuse, je veille à ce que chaque aspect de votre projet
+        soit soigné et conforme à vos attentes. Ouverte sur le monde, je peux
+        développer des projets web pensés pour une audience internationale.
+      </p>
+
+      <h4 id="scrollspyHeading2">Mes projets</h4>
+      <div class="container my-5">
+        <div class="row g-4">
+          <div class="col-12 col-md-6 col-lg-3">
+            <div class="card h-100">
+              <img src="..." class="card-img-top" alt="..." />
+              <div class="card-body">
+                <h5 class="card-title">Projet 1</h5>
+                <p class="card-text">Texte descriptif du projet.</p>
+                <a href="#" class="btn btn-primary">Voir plus</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-12 col-md-6 col-lg-3">
+            <div class="card h-100">
+              <img src="..." class="card-img-top" alt="..." />
+              <div class="card-body">
+                <h5 class="card-title">Projet 2</h5>
+                <p class="card-text">Texte descriptif du projet.</p>
+                <a href="#" class="btn btn-primary">Voir plus</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-12 col-md-6 col-lg-3">
+            <div class="card h-100">
+              <img src="..." class="card-img-top" alt="..." />
+              <div class="card-body">
+                <h5 class="card-title">Projet 3</h5>
+                <p class="card-text">Texte descriptif du projet.</p>
+                <a href="#" class="btn btn-primary">Voir plus</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-12 col-md-6 col-lg-3">
+            <div class="card h-100">
+              <img src="..." class="card-img-top" alt="..." />
+              <div class="card-body">
+                <h5 class="card-title">Projet 4</h5>
+                <p class="card-text">Texte descriptif du projet.</p>
+                <a href="#" class="btn btn-primary">Voir plus</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <h4 id="scrollspyHeading3">Expériences</h4>
+    <p>...</p>
+    <h4 id="scrollspyHeading4">A propos</h4>
+    <p>...</p>
+    <h4 id="scrollspyHeading5">Contact</h4>
+    <p>...</p>
+  </body>
+</html>
