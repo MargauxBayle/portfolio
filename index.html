@@ -7,34 +7,34 @@
     <link rel="stylesheet" href="css/style.min.css" />
     <link rel="stylesheet" href="css/background.css" />
   </head>
-  <body class="text-light">
-    <!--   background -->
-    <div class="lines">
-      <div class="line"></div>
-      <div class="line"></div>
-      <div class="line"></div>
-      <div class="line"></div>
-      <div class="line"></div>
-      <div class="line"></div>
-      <div class="line"></div>
-      <div class="line"></div>
-      <div class="line"></div>
-      <div class="line"></div>
-    </div>
-    <!-- end background -->
+  <body>
     <header>
+      <!--   background -->
+      <div class="lines">
+        <div class="line"></div>
+        <div class="line"></div>
+        <div class="line"></div>
+        <div class="line"></div>
+        <div class="line"></div>
+        <div class="line"></div>
+        <div class="line"></div>
+        <div class="line"></div>
+        <div class="line"></div>
+        <div class="line"></div>
+      </div>
+      <!-- end background -->
       <div class="container">
         <nav id="navbar-example2" class="navbar px-3 mb-3 sticky-top">
           <a class="navbar-brand text-light" href="#">Margaux Bayle</a>
           <ul class="nav nav-pills">
             <li class="nav-item">
-              <a class="nav-link text-light" href="#Mes projets">Mes projets</a>
+              <a class="nav-link text-light" href="#Mesprojets">Mes projets</a>
             </li>
             <li class="nav-item">
               <a class="nav-link text-light" href="#Expériences">Expériences</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link text-light" href="#A propos">A propos</a>
+              <a class="nav-link text-light" href="#Apropos">A propos</a>
             </li>
             <li class="nav-item">
               <a class="nav-link text-light" href="#Contact">Contact</a>
@@ -42,22 +42,44 @@
           </ul>
         </nav>
       </div>
-      <div>
-        <h1 id="main-title">Développeuse Web Full Stack</h1>
-        <h4>Des sites web à votre image, sécurisés et éco-responsables.</h4>
+      <div class="container vh-100 d-flex align-items-center">
+        <div class="row">
+          <div class="col-12 col-lg-10 offset-lg-1">
+            <h1 class="display-1">Développeuse Web Full Stack</h1>
+            <h4>Des sites web à votre image, sécurisés et éco-responsables.</h4>
+          </div>
+        </div>
       </div>
     </header>
-    <div class="projects">
-      <h4>Mes projets</h4>
+    <!--  Mes projets -->
+    <div class="container-fluid bg-primary vh-100">
+      <div class="container">
+        <h2>Mes projets</h2>
+      </div>
       <div class="container my-5">
         <div class="row g-4">
           <div class="col-12 col-md-6 col-lg-3">
             <div class="card h-100">
-              <img src="..." class="card-img-top" alt="..." />
+              <img
+                src="img/projet_arcafest.PNG"
+                class="card-img-top"
+                alt="..."
+              />
               <div class="card-body">
-                <h5 class="card-title">Projet 1</h5>
-                <p class="card-text">Texte descriptif du projet.</p>
-                <a href="#" class="btn btn-primary">Voir plus</a>
+                <h5 class="card-title">Arcafest</h5>
+                <p class="card-text">
+                  ArcaFest, le plus grand Festival de POP d’Europe. La ville
+                  d’Arcachon nos a confié la création du site web officiel de
+                  son nouveau festival de musique, prévu pour l’été prochain. Ce
+                  festival souhaite une image moderne, accessible et attrayante,
+                  mettant en avant sa programmation musicale, ses lieux, et les
+                  informations pratiques pour le public.
+                </p>
+                <a
+                  href="https://margauxbayle.github.io/ArcaFest/"
+                  class="btn btn-primary"
+                  >Voir plus</a
+                >
               </div>
             </div>
           </div>
@@ -97,11 +119,16 @@
         </div>
       </div>
     </div>
-    <h4>Expériences</h4>
+    <!--  Mes expériences -->
+    <div class="container-fluid bg-secondary">
+      <h2>Expériences</h2>
+      <p>...</p>
+    </div>
+    <!--  A propos -->
+    <h2>A propos</h2>
     <p>...</p>
-    <h4>A propos</h4>
-    <p>...</p>
-    <h4>Contact</h4>
+    <!--   Contact -->
+    <h2>Contact</h2>
     <p>...</p>
   </body>
 </html>
