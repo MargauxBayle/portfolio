@@ -8,10 +8,20 @@
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "description": "",
   "dependencies": {
     "aos": "^2.3.4",
-    "bootstrap": "^5.3.7",
+    "bootstrap": "^5.3.7"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MargauxBayle/portfolio.git"
+  },
+  "bugs": {
+    "url": "https://github.com/MargauxBayle/portfolio/issues"
+  },
+  "homepage": "https://github.com/MargauxBayle/portfolio#readme",
+  "description": "",
+  "devDependencies": {
     "sass": "^1.89.2"
   }
 }
