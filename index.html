@@ -5,52 +5,49 @@
     <meta name="viewport" content="width=, initial-scale=1.0" />
     <title>Portfolio</title>
     <link rel="stylesheet" href="css/style.min.css" />
-    <link rel="stylesheet" href="css/background.css" />
+    <link rel="stylesheet" href="css/burger.min.css" />
+    <link rel="stylesheet" href="css/button.min.css" />
   </head>
   <body>
     <header>
-      <!--   background -->
-      <div class="lines">
-        <div class="line"></div>
-        <div class="line"></div>
-        <div class="line"></div>
-        <div class="line"></div>
-        <div class="line"></div>
-        <div class="line"></div>
-        <div class="line"></div>
-        <div class="line"></div>
-        <div class="line"></div>
-        <div class="line"></div>
-      </div>
-      <!-- end background -->
-      <nav class="navbar px-3 mb-3 fixed-top">
-        <div class="container">
-          <a class="navbar-brand text-light" href="index.html">Margaux Bayle</a>
-          <ul class="nav nav-pills">
-            <li class="nav-item">
-              <a class="nav-link text-light" href="projets.html">Mes projets</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link text-light" href="contact.html">Contact</a>
-            </li>
-          </ul>
-        </div>
-      </nav>
+      <!-- menu -->
+      <label>
+        <input type="checkbox" />
+        <span class="menu">
+          <span class="hamburger"></span>
+        </span>
+        <ul>
+          <li>
+            <a href="#">A propos</a>
+          </li>
+          <li>
+            <a href="#">Projets</a>
+          </li>
+          <li>
+            <a href="#">Contact</a>
+          </li>
+        </ul>
+      </label>
       <div class="container vh-100 d-flex align-items-center">
         <div class="row">
-          <div class="col-12 col-lg-10 offset-lg-1 text-light">
+          <div class="col-12 col-lg-10 offset-lg-1 text-primary">
             <h1 class="display-1">Développeuse Web Full Stack</h1>
             <h4>Des sites web à votre image, sécurisés et éco-responsables.</h4>
           </div>
         </div>
-        <!--   eyes -->
-      </div>
-      <div class="eyes">
-        <div class="eye">
-          <div class="pupil"></div>
-        </div>
-        <div class="eye">
-          <div class="pupil"></div>
+        <!--  bouton -->
+        <div>
+          <button type="button" class="btn">
+            <strong>Contact Me !</strong>
+            <div id="container-stars">
+              <div id="stars"></div>
+            </div>
+
+            <div id="glow">
+              <div class="circle"></div>
+              <div class="circle"></div>
+            </div>
+          </button>
         </div>
       </div>
     </header>
@@ -111,18 +108,5 @@
         </article>
       </div>
     </div>
-
-    <script>
-      const pupils = document.querySelectorAll(".eye .pupil");
-      window.addEventListener("mousemove", (e) => {
-        pupils.forEach((pupil) => {
-          // get x and y postion of cursor
-          var rect = pupil.getBoundingClientRect();
-          var x = (e.pageX - rect.left) / 30 + "px";
-          var y = (e.pageY - rect.top) / 30 + "px";
-          pupil.style.transform = "translate3d(" + x + "," + y + ", 0px)";
-        });
-      });
-    </script>
   </body>
 </html>
