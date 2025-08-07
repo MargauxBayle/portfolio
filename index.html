@@ -42,31 +42,37 @@
     </header>
     <!--  About me -->
     <div class="container-fluid bg-primary p-4">
-      <div class="container text-light">
-        <h2 id="about">A propos</h2>
-        <p>
-          Salut, moi c’est Margaux et je suis développeuse Full Stack en
-          formation, passionnée par la création de sites web personnalisés,
-          accessibles et bien conçus. <br />
-          Mon objectif : Mettre en valeur ce qui compte pour vous, à travers des
-          interfaces élégantes, fluides et efficaces, tout en respectant les
-          bonnes pratiques du développement web. <br />
-          Rigoureuse et attentive aux détails, je m’engage à livrer des projets
-          soignés, à la hauteur de vos attentes. Je m’intéresse particulièrement
-          à l’accessibilité, à la qualité du code, mais aussi à
-          l’éco-conception, parce que créer des sites performants, c’est aussi
-          penser à leur impact. <br />
-          Curieuse et ouverte sur le monde, j’aime travailler sur des projets
-          pensés pour une audience internationale, en tenant compte des enjeux
-          culturels et techniques. <br />
-          Côté compétences je travaille avec HTML, CSS, JavaScript et des
-          Frameworks comme Bootstrap.
-        </p>
+      <div class="container my-5 text-light">
+        <div
+          class="border border-bottom-0 border-3 rounded-top d-inline-block px-3"
+        >
+          <h2 id="about">A propos</h2>
+        </div>
+        <div class="border border-3 shadow-lg p-5">
+          <p>
+            Salut, moi c’est Margaux et je suis développeuse Full Stack en
+            formation, passionnée par la création de sites web personnalisés,
+            accessibles et bien conçus. <br />
+            Mon objectif : Mettre en valeur ce qui compte pour vous, à travers
+            des interfaces élégantes, fluides et efficaces, tout en respectant
+            les bonnes pratiques du développement web. <br />
+            Rigoureuse et attentive aux détails, je m’engage à livrer des
+            projets soignés, à la hauteur de vos attentes. Je m’intéresse
+            particulièrement à l’accessibilité, à la qualité du code, mais aussi
+            à l’éco-conception, parce que créer des sites performants, c’est
+            aussi penser à leur impact. <br />
+            Curieuse et ouverte sur le monde, j’aime travailler sur des projets
+            pensés pour une audience internationale, en tenant compte des enjeux
+            culturels et techniques. <br />
+            Côté compétences je travaille avec HTML, CSS, JavaScript et des
+            Frameworks comme Bootstrap.
+          </p>
+        </div>
       </div>
     </div>
     <!--  Resume -->
     <div class="container-fluid bg-secondary p-4">
-      <div class="container text-primary">
+      <div class="container my-5 text-primary">
         <h2 id="resume">Expérience pro</h2>
         <article>
           <h3>Responsable de réception - Camping le Marache Biganos / 2024</h3>
@@ -98,8 +104,8 @@
       </div>
     </div>
     <!--  Projects -->
-    <div class="bg-white vh-100">
-      <div class="container p-5">
+    <div class="container-fluid bg-white p-4">
+      <div class="container my-5">
         <h2 id="projects" class="text-primary">Mes projets</h2>
       </div>
       <div class="container my-5">
@@ -174,10 +180,64 @@
     </div>
     <!--   Contact -->
     <div class="container-fluid vh-100 bg-light p-5">
-      <div class="container text-primary">
+      <form class="container text-primary">
         <h1 id="contact">Contact</h1>
-        <p>...</p>
-      </div>
+        <div class="row mb-3">
+          <label for="formGroupExampleInput" class="form-label"
+            >Nom et prénom</label
+          >
+          <div class="col">
+            <input
+              type="text"
+              class="form-control"
+              placeholder="Pénom"
+              aria-label="Prénom"
+            />
+          </div>
+          <div class="col">
+            <input
+              type="text"
+              class="form-control"
+              placeholder="Nom"
+              aria-label="Nom"
+            />
+          </div>
+        </div>
+        <div class="mb-3">
+          <label for="exampleFormControlInput1" class="form-label">Email</label>
+          <input
+            type="email"
+            class="form-control"
+            id="exampleFormControlInput1"
+            placeholder="exemple@contact.com"
+          />
+        </div>
+        <div class="mb-3">
+          <label for="phoneInput" class="form-label">Numéro de téléphone</label>
+          <input
+            type="tel"
+            class="form-control"
+            id="phoneInput"
+            placeholder="06 12 34 56 78"
+            pattern="[0-9]{2} [0-9]{2} [0-9]{2} [0-9]{2} [0-9]{2}"
+            required
+          />
+        </div>
+        <div class="mb-3">
+          <label for="exampleFormControlTextarea1" class="form-label"
+            >Saisissez votre message</label
+          >
+          <textarea
+            class="form-control"
+            id="exampleFormControlTextarea1"
+            rows="3"
+            placeholder="Message"
+          ></textarea>
+        </div>
+        <div class="col-12">
+          <button class="btn btn-primary" type="submit">Envoyer</button>
+        </div>
+      </form>
     </div>
     <footer></footer>
     <script>
