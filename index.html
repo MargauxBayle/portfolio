@@ -10,7 +10,6 @@
   </head>
   <body>
     <header>
-      <!-- menu -->
       <label>
         <input type="checkbox" id="menu-toggle" />
         <span class="menu">
@@ -35,13 +34,13 @@
         <div class="row">
           <div class="col-12 col-lg-10 offset-lg-1 text-primary">
             <h1 class="display-1">Développeuse Web Full Stack</h1>
-            <h4>Des sites web à votre image, sécurisés et éco-responsables.</h4>
+            <h2>Des sites web à votre image, sécurisés et éco-responsables.</h2>
           </div>
         </div>
       </div>
     </header>
     <!--  About me -->
-    <div class="container-fluid bg-primary p-4">
+    <main class="container-fluid bg-primary p-4">
       <div class="container my-5 text-light">
         <div
           class="border border-bottom-0 border-3 rounded-top d-inline-block px-3"
@@ -69,9 +68,9 @@
           </p>
         </div>
       </div>
-    </div>
+    </main>
     <!--  Resume -->
-    <div class="container-fluid bg-secondary p-4">
+    <section class="container-fluid bg-secondary p-4">
       <div class="container my-5 text-primary">
         <h2 id="resume">Expérience pro</h2>
         <article>
@@ -102,9 +101,9 @@
           </ul>
         </article>
       </div>
-    </div>
+    </section>
     <!--  Projects -->
-    <div class="container-fluid bg-white p-4">
+    <section class="container-fluid bg-white p-4">
       <div class="container my-5">
         <h2 id="projects" class="text-primary">Mes projets</h2>
       </div>
@@ -113,9 +112,10 @@
           <div class="col-12 col-md-6 col-lg-3">
             <div class="card h-100">
               <img
-                src="img/projet_arcafest.PNG"
+                src="img/projet_arcafest.webp"
                 class="card-img-top"
-                alt="..."
+                title="Projet Arcafest Festival de musique Pop à Arcachon"
+                alt="Image miniature du projet de site internet ArcaFest Festival de musique Pop à Arcachon"
               />
               <div class="card-body">
                 <h5 class="card-title">Arcafest</h5>
@@ -177,11 +177,11 @@
           </div>
         </div>
       </div>
-    </div>
+    </section>
     <!--   Contact -->
-    <div class="container-fluid vh-100 bg-light p-5">
+    <section class="container-fluid vh-100 bg-light p-5">
       <form class="container text-primary">
-        <h1 id="contact">Contact</h1>
+        <h2 id="contact">Contact</h2>
         <div class="row mb-3">
           <label for="formGroupExampleInput" class="form-label"
             >Nom et prénom</label
@@ -238,7 +238,7 @@
           <button class="btn btn-primary" type="submit">Envoyer</button>
         </div>
       </form>
-    </div>
+    </section>
     <footer></footer>
     <script>
       document.querySelectorAll("label ul a").forEach((link) => {
