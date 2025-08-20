@@ -6,7 +6,13 @@
     <title>Portfolio</title>
     <link rel="stylesheet" href="css/style.min.css" />
     <link rel="stylesheet" href="css/burger.min.css" />
-    <link rel="stylesheet" href="css/button.min.css" />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.6.3/css/all.css"
+      integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="css/social-media.min.css" />
   </head>
   <body>
     <header>
@@ -180,7 +186,7 @@
     </div>
     <!--   Contact -->
     <div class="container-fluid vh-100 bg-light p-5">
-      <form class="container text-primary">
+      <form class="container p-5 text-primary">
         <h1 id="contact">Contact</h1>
         <div class="row mb-3">
           <label for="formGroupExampleInput" class="form-label"
@@ -239,7 +245,24 @@
         </div>
       </form>
     </div>
-    <footer></footer>
+    <footer class="container-fluid">
+      <div class="container">
+        <ul>
+          <li>
+            <a href="#"> <i class="fab fa-facebook-f icon"></i> </a>
+          </li>
+          <li>
+            <a href="#"><i class="fab fa-twitter icon"></i></a>
+          </li>
+          <li>
+            <a href="#"><i class="fab fa-linkedin-in icon"></i></a>
+          </li>
+          <li>
+            <a href="#"><i class="fab fa-google-plus-g icon"></i></a>
+          </li>
+        </ul>
+      </div>
+    </footer>
     <script>
       document.querySelectorAll("label ul a").forEach((link) => {
         link.addEventListener("click", () => {
