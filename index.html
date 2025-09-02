@@ -10,6 +10,9 @@
     <title>Margaux, Développeuse Web Full Stack - Portfolio</title>
     <link rel="stylesheet" href="css/style.min.css" />
     <link rel="stylesheet" href="css/burger.min.css" />
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/gsap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/ScrollTrigger.min.js"></script>
+    <link rel="stylesheet" href="js/style.js" />
   </head>
   <body>
     <header>
@@ -142,11 +145,23 @@
 
           <div class="col-12 col-md-6 col-lg-3">
             <div class="card h-100">
-              <img src="..." class="card-img-top" title="" alt="..." />
+              <img
+                src="img/cinemaneondynasty.PNG"
+                class="card-img-top"
+                title="Projet Cinema Neon Dynatsy"
+                alt="..."
+              />
               <div class="card-body">
-                <h5 class="card-title">Projet 2</h5>
-                <p class="card-text">Texte descriptif du projet.</p>
-                <a href="#" target="_blank" class="btn btn-primary"
+                <h5 class="card-title">Cinema neon Dynasty</h5>
+                <p class="card-text">
+                  Site pour le “CINEMA NEON DYNASTY”, un cinéma spécialisé dans
+                  le cyberpunk néon futuriste avec une forte influence
+                  japonaise.
+                </p>
+                <a
+                  href="https://cinema.margauxbayle.fr/"
+                  target="_blank"
+                  class="btn btn-primary"
                   >Voir plus</a
                 >
               </div>
@@ -243,12 +258,5 @@
       </form>
     </section>
     <footer></footer>
-    <script>
-      document.querySelectorAll("label ul a").forEach((link) => {
-        link.addEventListener("click", () => {
-          document.getElementById("menu-toggle").checked = false;
-        });
-      });
-    </script>
   </body>
 </html>
