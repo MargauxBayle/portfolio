@@ -11,11 +11,21 @@
     <link rel="stylesheet" href="css/style.min.css" />
     <link rel="stylesheet" href="css/burger.min.css" />
     <script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/gsap.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/ScrollTrigger.min.js"></script>
-    <link rel="stylesheet" href="js/style.js" />
   </head>
   <body>
     <header>
+      <div class="loader">
+        <div class="containerLoad">
+          <div class="dot"></div>
+          <div class="dot"></div>
+          <div class="dot"></div>
+        </div>
+        <div class="containerLoad">
+          <div class="shadow"></div>
+          <div class="shadow"></div>
+          <div class="shadow"></div>
+        </div>
+      </div>
       <label>
         <input type="checkbox" id="menu-toggle" />
         <span class="menu">
@@ -39,7 +49,10 @@
       <div class="container vh-100 d-flex align-items-center">
         <div class="row">
           <div class="col-12 col-lg-10 offset-lg-1 text-primary">
-            <h1 class="display-1">Développeuse Web Full Stack</h1>
+            <h1 class="display-1">
+              Développeuse Web <br />
+              Full Stack
+            </h1>
             <h2>Des sites web à votre image, sécurisés et éco-responsables.</h2>
           </div>
         </div>
@@ -258,5 +271,6 @@
       </form>
     </section>
     <footer></footer>
+    <script src="js/style.js"></script>
   </body>
 </html>
