@@ -1,8 +1,15 @@
+$dark: #374a58;
+$light: #cdcbd8;
+$white: #ffffff;
+$red: #661524;
+$pink: #fcd1c1;
+$lightpink: #fde7de;
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  background-color: #374a58;
+  background-color: $dark;
 }
 
 @font-face {
@@ -42,13 +49,6 @@
   font-weight: 700;
   font-style: normal;
 }
-
-$dark: #374a58;
-$light: #cdcbd8;
-$white: #ffffff;
-$red: #661524;
-$pink: #fcd1c1;
-$lightpink: #fde7de;
 
 @mixin flex-center($gap: 0) {
   display: flex;
@@ -101,7 +101,7 @@ h1 {
     color: $light;
     font-family: "Michroma", sans-serif;
     &:hover {
-      color: $light;
+      color: $lightpink;
     }
   }
 }
@@ -217,7 +217,7 @@ h1 {
     text-decoration: none;
   }
   a:hover {
-    color: $pink;
+    color: $lightpink;
   }
 }
 
@@ -246,15 +246,15 @@ h1 {
   align-items: center;
   text-align: center;
   &--title {
-    font-family: "Michroma", sans-serif;
+    font-family: "Quicksand", sans-serif;
     font-size: 2rem;
     text-transform: uppercase;
-    color: $turquoise;
+    color: $light;
     @media screen and (min-width: 764px) {
       font-size: 3rem;
     }
     &__highlight {
-      color: $pink;
+      color: $lightpink;
     }
   }
 }
