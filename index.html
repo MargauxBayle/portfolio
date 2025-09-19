@@ -5,56 +5,79 @@
     <meta name="viewport" content="width=, initial-scale=1.0" />
     <title>Portfolio</title>
     <link rel="stylesheet" href="css/style.min.css" />
-    <link rel="stylesheet" href="css/burger.min.css" />
-    <link
-      rel="stylesheet"
-      href="https://use.fontawesome.com/releases/v5.6.3/css/all.css"
-      integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/"
-      crossorigin="anonymous"
-    />
-    <link rel="stylesheet" href="css/social-media.min.css" />
+    <script type="module" src="burger.js"></script>
   </head>
   <body>
     <header>
-      <!-- menu -->
-      <label>
-        <input type="checkbox" id="menu-toggle" />
-        <span class="menu">
-          <span class="hamburger"></span>
-        </span>
-        <ul>
-          <li>
-            <a href="#about">A propos</a>
-          </li>
-          <li>
-            <a href="#resume">Expérience pro</a>
-          </li>
-          <li>
-            <a href="#projects">Projets</a>
-          </li>
-          <li>
-            <a href="#contact">Contact</a>
-          </li>
-        </ul>
-      </label>
-      <div class="container vh-100 d-flex align-items-center">
-        <div class="row">
-          <div class="col-12 col-lg-10 offset-lg-1 text-primary">
-            <h1 class="display-1">Développeuse Web Full Stack</h1>
-            <h4>Des sites web à votre image, sécurisés et éco-responsables.</h4>
+      <!--  navbar -->
+      <nav>
+        <div class="navbar">
+          <!--  nav version pc  -->
+          <div class="navbar-pc">
+            <ul class="navbar--list">
+              <li>
+                <a
+                  class="navbar--link"
+                  aria-label="Lien pour la partie à propos"
+                  href="#"
+                  >A propos</a
+                >
+              </li>
+              <li>
+                <a
+                  class="navbar--link"
+                  aria-label="Lien pour la partie mes projets"
+                  href="#"
+                  >Mes projets</a
+                >
+              </li>
+              <li>
+                <a
+                  class="navbar--link"
+                  aria-label="lien pour la partie contact"
+                  href="#"
+                  >Me contacter</a
+                >
+              </li>
+            </ul>
+          </div>
+
+          <!--  nav version mobile  -->
+          <div id="burger-menu">
+            <span></span>
+          </div>
+
+          <div id="navbar-mobile--menu">
+            <ul>
+              <li>
+                <a aria-label="Lien pour la page à propos" href="#">A propos</a>
+              </li>
+              <li>
+                <a aria-label="Lien pour la page mes projets" href="#"
+                  >Mes projets</a
+                >
+              </li>
+              <li>
+                <a aria-label="lien pour la page me contacter" href="#"
+                  >Me contacter</a
+                >
+              </li>
+            </ul>
           </div>
         </div>
-      </div>
+      </nav>
     </header>
     <!--  About me -->
-    <div class="container-fluid bg-primary p-4">
-      <div class="container my-5 text-light">
-        <div
-          class="border border-bottom-0 border-3 rounded-top d-inline-block px-3"
-        >
-          <h2 id="about">A propos</h2>
+
+    <main>
+      <section class="hero">
+        <div class="hero-container">
+          <div>
+            <h1 class="hero--title">A propos</h1>
+          </div>
+          <div><!-- Mettre un effet waouh --></div>
         </div>
-        <div class="border border-3 shadow-lg p-5">
+        <div>
           <p>
             Salut, moi c’est Margaux et je suis développeuse Full Stack en
             formation, passionnée par la création de sites web personnalisés,
@@ -74,201 +97,148 @@
             Frameworks comme Bootstrap.
           </p>
         </div>
-      </div>
-    </div>
-    <!--  Resume -->
-    <div class="container-fluid bg-secondary p-4">
-      <div class="container my-5 text-primary">
-        <h2 id="resume">Expérience pro</h2>
-        <article>
-          <h3>Responsable de réception - Camping le Marache Biganos / 2024</h3>
-          <ul>
-            <li>Comptabilité</li>
-            <li>Management des équipes</li>
-            <li>Gestion des réseaux sociaux</li>
-            <li>Gesttion des réclamations</li>
-          </ul>
-          <h3>
-            Hôtesse d'accueil polyvalente - Camping le Marache Biganos / 2023
-            <br />
-            Camping Huttopia Arcachon / 2022
-          </h3>
-          <ul>
-            <li>Accueil et renseignement des clients (FR&EN)</li>
-            <li>Utilisation d'un outil de Gestion Client</li>
-            <li>Gestion des réservations (FR&EN)</li>
-          </ul>
-          <h3>
-            Opératrice/Animatrice Attraction - EURO DISNEY SAS Disneyland Paris
-            / 2022
-          </h3>
-          <ul>
-            <li>Accueil et renseignement des guests (FR&EN)</li>
-            <li>Application d'un protocole de sécurité</li>
-          </ul>
-        </article>
-      </div>
-    </div>
-    <!--  Projects -->
-    <div class="container-fluid bg-white p-4">
-      <div class="container my-5">
-        <h2 id="projects" class="text-primary">Mes projets</h2>
-      </div>
-      <div class="container my-5">
-        <div class="row g-4">
-          <div class="col-12 col-md-6 col-lg-3">
-            <div class="card h-100">
+        <br />
+        <div>
+          <h2 class="semi-bold">Mes projets</h2>
+        </div>
+
+        <div class="projects">
+          <div class="projects--card">
+            <div>
               <img
-                src="img/projet_arcafest.PNG"
-                class="card-img-top"
-                alt="..."
+                class="projects--card__img"
+                src="..."
+                title="Projet 1"
+                alt="Voici l'image miniature du projet 1"
+                aria-label="Image représentant la miniature du projet 1"
               />
-              <div class="card-body">
-                <h5 class="card-title">Arcafest</h5>
-                <p class="card-text">
-                  ArcaFest, le plus grand Festival de POP d’Europe. La ville
-                  d’Arcachon nos a confié la création du site web officiel de
-                  son nouveau festival de musique, prévu pour l’été prochain. Ce
-                  festival souhaite une image moderne, accessible et attrayante,
-                  mettant en avant sa programmation musicale, ses lieux, et les
-                  informations pratiques pour le public.
-                </p>
-                <a
-                  href="https://margauxbayle.github.io/ArcaFest/"
-                  target="_blank"
-                  class="btn btn-primary"
-                  >Voir plus</a
-                >
-              </div>
+            </div>
+            <div>
+              <a
+                class="projects--card__title"
+                href="https://margauxbayle.github.io/ArcaFest/"
+                target="_blank"
+                aria-label="lien pour accéder au site du projet 1"
+                >Arcafest</a
+              >
             </div>
           </div>
-
-          <div class="col-12 col-md-6 col-lg-3">
-            <div class="card h-100">
-              <img src="..." class="card-img-top" alt="..." />
-              <div class="card-body">
-                <h5 class="card-title">Projet 2</h5>
-                <p class="card-text">Texte descriptif du projet.</p>
-                <a href="#" target="_blank" class="btn btn-primary"
-                  >Voir plus</a
-                >
-              </div>
+          <div class="projects--card">
+            <div>
+              <img
+                class="projects--card__img"
+                src="..."
+                alt="Voici l'image miniature du projet 2"
+                aria-label="Image représentant la miniature du projet 2"
+              />
+            </div>
+            <div>
+              <a
+                class="projects--card__title"
+                href="#"
+                target="_blank"
+                aria-label="lien pour accéder au site du projet 2"
+                >Projet 2</a
+              >
             </div>
           </div>
-
-          <div class="col-12 col-md-6 col-lg-3">
-            <div class="card h-100">
-              <img src="..." class="card-img-top" alt="..." />
-              <div class="card-body">
-                <h5 class="card-title">Projet 3</h5>
-                <p class="card-text">Texte descriptif du projet.</p>
-                <a href="#" target="_blank" class="btn btn-primary"
-                  >Voir plus</a
-                >
-              </div>
+          <div class="projects--card">
+            <div>
+              <img
+                class="projects--card__img"
+                src="..."
+                alt="Voici l'image miniature du projet 3"
+                aria-label="Image représentant la miniature du projet 3"
+              />
+            </div>
+            <div>
+              <a
+                class="projects--card__title"
+                href="#"
+                target="_blank"
+                aria-label="lien pour accéder au site du projet 3"
+                >Projet 3</a
+              >
             </div>
           </div>
-
-          <div class="col-12 col-md-6 col-lg-3">
-            <div class="card h-100">
-              <img src="..." class="card-img-top" alt="..." />
-              <div class="card-body">
-                <h5 class="card-title">Projet 4</h5>
-                <p class="card-text">Texte descriptif du projet.</p>
-                <a href="#" target="_blank" class="btn btn-primary"
-                  >Voir plus</a
-                >
-              </div>
+          <div class="projects--card">
+            <div>
+              <img
+                class="projects--card__img"
+                src="..."
+                alt="Voici l'image miniature du projet 4"
+                aria-label="Image représentant la miniature du projet 4"
+              />
+            </div>
+            <div>
+              <a
+                class="projects--card__title"
+                href="#"
+                target="_blank"
+                aria-label="lien pour accéder au site du projet 4"
+                >Projet 4</a
+              >
+            </div>
+          </div>
+          <div class="projects--card">
+            <div>
+              <img
+                class="projects--card__img"
+                src="..."
+                alt="Voici l'image miniature du projet 5"
+                aria-label="Image représentant la miniature du projet 5"
+              />
+            </div>
+            <div>
+              <a
+                class="projects--card__title"
+                href="#"
+                target="_blank"
+                aria-label="lien pour accéder au site du projet 5"
+                >Projet 5</a
+              >
             </div>
           </div>
         </div>
+      </section>
+
+      <!--   Contact -->
+      <!--  faire un formumaire de contact -->
+    </main>
+    <footer class="footer">
+      <div>
+        <a href="#"
+          ><img
+            class="footer--logo"
+            src="..."
+            alt="logo instagram"
+            aria-label="logo pour le lien vers instagram"
+        /></a>
+        <a href="#"
+          ><img
+            class="footer--logo"
+            src="..."
+            alt="logo facebook"
+            aria-label="logo pour le lien vers facebook"
+        /></a>
       </div>
-    </div>
-    <!--   Contact -->
-    <div class="container-fluid vh-100 bg-light p-5">
-      <form class="container p-5 text-primary">
-        <h1 id="contact">Contact</h1>
-        <div class="row mb-3">
-          <label for="formGroupExampleInput" class="form-label"
-            >Nom et prénom</label
-          >
-          <div class="col">
-            <input
-              type="text"
-              class="form-control"
-              placeholder="Pénom"
-              aria-label="Prénom"
-            />
-          </div>
-          <div class="col">
-            <input
-              type="text"
-              class="form-control"
-              placeholder="Nom"
-              aria-label="Nom"
-            />
-          </div>
-        </div>
-        <div class="mb-3">
-          <label for="exampleFormControlInput1" class="form-label">Email</label>
-          <input
-            type="email"
-            class="form-control"
-            id="exampleFormControlInput1"
-            placeholder="exemple@contact.com"
-          />
-        </div>
-        <div class="mb-3">
-          <label for="phoneInput" class="form-label">Numéro de téléphone</label>
-          <input
-            type="tel"
-            class="form-control"
-            id="phoneInput"
-            placeholder="06 12 34 56 78"
-            pattern="[0-9]{2} [0-9]{2} [0-9]{2} [0-9]{2} [0-9]{2}"
-            required
-          />
-        </div>
-        <div class="mb-3">
-          <label for="exampleFormControlTextarea1" class="form-label"
-            >Saisissez votre message</label
-          >
-          <textarea
-            class="form-control"
-            id="exampleFormControlTextarea1"
-            rows="3"
-            placeholder="Message"
-          ></textarea>
-        </div>
-        <div class="col-12">
-          <button class="btn btn-primary" type="submit">Envoyer</button>
-        </div>
-      </form>
-    </div>
-    <footer class="container-fluid">
-      <div class="container">
-        <ul>
-          <li>
-            <a href="#"> <i class="fab fa-facebook-f icon"></i> </a>
-          </li>
-          <li>
-            <a href="#"><i class="fab fa-twitter icon"></i></a>
-          </li>
-          <li>
-            <a href="#"><i class="fab fa-linkedin-in icon"></i></a>
-          </li>
-          <li>
-            <a href="#"><i class="fab fa-google-plus-g icon"></i></a>
-          </li>
-        </ul>
+      <div class="footer--link">
+        <a
+          class="footer--link__decoration"
+          href="#"
+          aria-label="lien vers les mentions légales"
+          >Mentions légales</a
+        >
+        <p>|</p>
+        <a
+          class="footer--link__decoration"
+          href="#"
+          aria-label="lien vers les préférences concernant les cookies"
+          >Préférences Cookies</a
+        >
       </div>
+      <br />
+      <p>© 2025 - Margaux Bayle</p>
     </footer>
-    <script>
-      document.querySelectorAll("label ul a").forEach((link) => {
-        link.addEventListener("click", () => {
-          document.getElementById("menu-toggle").checked = false;
-        });
-      });
-    </script>
   </body>
 </html>

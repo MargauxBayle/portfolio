@@ -1,17 +1,350 @@
-@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap");
-$primary: #374a58;
-$secondary: #fcd1c1;
-$light: #cdcbd8;
-p {
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: #2e2a39;
+}
+
+/* 
+@font-face {
+  font-family: "Michroma";
+  src: url(../font/Michroma-Regular.ttf);
+  font-weight: normal;
+  font-style: normal;
+} remplacer avec QUICKSAND
+ */
+
+@font-face {
   font-family: "Roboto";
+  src: url(../font/Roboto-Regular.ttf);
+  font-weight: normal;
+  font-style: normal;
 }
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  font-family: "Quicksand";
+@font-face {
+  font-family: "Robot";
+  src: url(../font/Roboto-Light.ttf);
+  font-weight: 100;
+  font-style: normal;
 }
-@import "../node_modules/bootstrap/scss/bootstrap.scss";
+@font-face {
+  font-family: "Roboto";
+  src: url(../font/Roboto-SemiBold.ttf);
+  font-weight: 600;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Roboto";
+  src: url(../font/Roboto-Medium.ttf);
+  font-weight: 500;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Roboto";
+  src: url(../font/Roboto-Bold.ttf);
+  font-weight: 700;
+  font-style: normal;
+}
+
+$dark: #2e2a39;
+$light: #e8ffff;
+$turquoise: #83feff;
+$pink: #fd55b7;
+
+@mixin flex-center($gap: 0) {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: $gap;
+}
+
+body {
+  font-family: "Roboto-Regular", sans-serif;
+  font-size: 20px;
+  color: $light;
+}
+
+h2 {
+  font-size: 32px;
+  color: $light;
+}
+
+h1 {
+  font-family: "Quicksand", sans-serif;
+}
+
+.light {
+  font-weight: 100;
+}
+.medium {
+  font-weight: 500;
+}
+.semi-bold {
+  font-weight: 600;
+}
+.bold {
+  font-weight: 700;
+}
+
+/* --- navbar style: ---*/
+.navbar {
+  @include flex-center(2rem);
+  &--logo {
+    width: 72px;
+  }
+  &--list {
+    display: flex;
+    gap: 3rem;
+    list-style: none;
+  }
+  &--link {
+    text-decoration: none;
+    color: $light;
+    font-family: "Michroma", sans-serif;
+    &:hover {
+      color: $turquoise;
+    }
+  }
+}
+
+.navbar-pc {
+  display: none;
+
+  @media screen and (min-width: 768px) {
+    display: flex;
+  }
+}
+
+#burger-menu {
+  cursor: pointer;
+  height: 27px;
+  width: 27px;
+  margin: 50px;
+  overflow: visible;
+  position: relative;
+  z-index: 2;
+  @media screen and (min-width: 767px) {
+    display: none;
+  }
+
+  // Burger menu lines
+  span,
+  span:before,
+  span:after {
+    background: $turquoise;
+    display: block;
+    height: 2px;
+    opacity: 1;
+    position: absolute;
+    transition: 0.3s ease-in-out;
+  }
+
+  span:before,
+  span:after {
+    content: "";
+  }
+
+  span:before {
+    left: 0px;
+    top: -10px;
+    width: 27px;
+  }
+
+  span {
+    right: 0px;
+    top: 13px;
+    width: 27px;
+  }
+
+  span:after {
+    left: 0px;
+    top: 10px;
+    width: 27px;
+  }
+
+  // burger rotation on click
+  &.close {
+    span:before {
+      top: 0px;
+      transform: rotate(90deg);
+      width: 27px;
+    }
+
+    span {
+      transform: rotate(-45deg);
+      top: 13px;
+      width: 27px;
+    }
+
+    span:after {
+      top: 0px;
+      left: 0;
+      transform: rotate(90deg);
+      opacity: 0;
+      width: 0;
+    }
+  }
+}
+
+#navbar-mobile--menu {
+  z-index: 1;
+  min-width: 100%;
+  min-height: 100%;
+  position: fixed;
+  top: 0;
+  height: 0;
+  visibility: hidden;
+  opacity: 0;
+  text-align: center;
+  padding-top: 20px;
+  transition: all 0.3s ease-in-out;
+
+  &.overlay {
+    visibility: visible;
+    opacity: 1;
+    padding-top: 100px;
+    background: $dark;
+  }
+
+  li {
+    list-style: none;
+  }
+
+  a {
+    color: $light;
+    display: block;
+    font-size: 32px;
+    margin-bottom: 30px;
+    text-decoration: none;
+  }
+  a:hover {
+    color: $turquoise;
+  }
+}
+
+.header--banner {
+  width: 100%;
+  max-height: 10rem;
+  object-fit: cover;
+  display: block;
+}
+
+/* --- end navbar style --- */
+
+.container {
+  width: auto;
+  margin: 1rem;
+  padding: 1rem;
+  @media screen and (min-width: 1024px) {
+    margin: auto;
+    width: 1080px;
+  }
+}
+
+.hero {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  &--title {
+    font-family: "Michroma", sans-serif;
+    font-size: 2rem;
+    text-transform: uppercase;
+    color: $turquoise;
+    @media screen and (min-width: 764px) {
+      font-size: 3rem;
+    }
+    &__highlight {
+      color: $pink;
+    }
+  }
+}
+
+.hero-container {
+  padding: 1rem;
+  @media screen and (min-width: 1024px) {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+@mixin hightlight-button {
+  display: block;
+  margin: 0 auto;
+  color: $turquoise;
+  background-color: transparent;
+  border: 3px solid $pink;
+  padding: 9px;
+  border-radius: 5px;
+  font-size: 30px;
+  text-align: center;
+  text-decoration: none;
+}
+
+.projects {
+  display: flex;
+  gap: 40px;
+  padding: 50px;
+  width: 75vw;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+
+  @media screen and (min-width: 1024px) {
+    width: 100vw;
+    justify-content: center;
+  }
+  &--card {
+    scroll-snap-align: center;
+  }
+}
+
+.projects--card__img {
+  height: 20rem;
+}
+
+.projects--card__title {
+  font-family: "Michroma", sans-serif;
+  color: #e8ffff;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+.projects--card__title:hover {
+  color: $turquoise;
+}
+
+.hero--btn {
+  @include hightlight-button();
+}
+.hero--btn:hover {
+  color: $pink;
+}
+
+/*--- footer style ---*/
+
+.footer {
+  text-align: center;
+  color: $turquoise;
+  &--banner {
+    width: 100%;
+    max-height: 20rem;
+    object-fit: cover;
+    display: block;
+    margin-top: 20px;
+  }
+  &--link {
+    @include flex-center(5px);
+    margin-top: 15px;
+    &__decoration {
+      text-decoration: none;
+      color: $turquoise;
+    }
+  }
+  &--logo {
+    width: 32px;
+    @media screen and (min-width: 1024px) {
+      width: 48px;
+    }
+  }
+}
